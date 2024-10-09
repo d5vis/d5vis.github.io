@@ -5,22 +5,29 @@ import Landing from "./components/landing";
 
 export default function Home() {
   const lastScrollY = useRef(0);
+  const isScrolling = useRef(false);
 
   useEffect(() => {
     const handleWheel = (event: WheelEvent) => {
-      if (event.deltaY < 0) {
-        // User is scrolling up
+      if (isScrolling.current) return;
+
+      isScrolling.current = true;
+      const scrollingUp = event.deltaY < 0;
+      const scrollingDown = event.deltaY > 0;
+      if (scrollingUp) {
         requestAnimationFrame(() => {
           window.scrollTo({ top: 0, behavior: "smooth" });
         });
-      } else if (event.deltaY > 0) {
-        // User is scrolling down
+      } else if (scrollingDown) {
         requestAnimationFrame(() => {
           document
             .getElementById("about")
             ?.scrollIntoView({ behavior: "smooth" });
         });
       }
+      setTimeout(() => {
+        isScrolling.current = false;
+      }, 750);
     };
 
     const handleTouchStart = (event: TouchEvent) => {

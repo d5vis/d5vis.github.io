@@ -3,15 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #282d3c;
+  --foreground: #ffffff;
+  --lightblue: #9badb7;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body {
+  scroll-behavior: smooth;
 }
 
 body {

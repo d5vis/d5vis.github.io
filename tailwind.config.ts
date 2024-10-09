@@ -11,6 +11,10 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        lightblue: "var(--lightblue)",
+      },
+      fontFamily: {
+        pixel: "var(--font-pixel)",
       },
     },
   },

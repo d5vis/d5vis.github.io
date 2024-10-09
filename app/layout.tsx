@@ -13,7 +13,7 @@ const geistMono = localFont({
   weight: "100 900",
 });
 const pixel = localFont({
-  src: "./fonts/pixel.ttf",
+  src: "./fonts/Pixel.ttf",
   variable: "--font-pixel",
   weight: "400",
 });

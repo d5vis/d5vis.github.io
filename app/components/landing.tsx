@@ -9,7 +9,7 @@ const Landing = () => {
 
   return (
     <main id="landing" className="h-screen">
-      <div className="relative z-10 flex w-full justify-between">
+      <div className="relative z-10 flex w-screen px-8 justify-between">
         <h1 className="text-xl">
           <b>@d5vis</b>
         </h1>

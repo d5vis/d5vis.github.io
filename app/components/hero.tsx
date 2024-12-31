@@ -5,7 +5,7 @@ const Hero = () => {
     <div className="relative h-[75vh] flex flex-col justify-between bg-gray-300 bg-hero bg-cover bg-center rounded-b-[48px] shadow-md">
       <nav className="relative z-10 flex w-full px-8 py-4 justify-between text-white">
         <h1 className="text-xl">
-          <b>engineer</b>
+          <b>davis banks</b>
         </h1>
         <div className="flex flex-col text-end sm:flex-row gap-2 sm:gap-4">
           <Link href="#work" className="text-xl hover:underline">

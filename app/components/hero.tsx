@@ -40,7 +40,7 @@ const Hero = () => {
           </Link> */}
         </div>
       </nav>
-      <div className="flex flex-col sm:flex-row items-center justify-center text-white p-8 gap-2 sm:gap-8">
+      <div className="flex flex-col items-center justify-center text-white p-8 gap-2 md:flex-row md:gap-8">
         <div className="flex gap-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -3,9 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --background: #282d3c;
-  --foreground: #ffffff;
+  --background: #ffffff;
+  --foreground: #000000;
+  --davblue: #adceed;
   --lightblue: #9badb7;
+  --darkblue: #282d3c;
 }
 
 html,

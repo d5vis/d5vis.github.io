@@ -1,17 +1,13 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+
 const pixel = localFont({
   src: "./fonts/Pixel.ttf",
   variable: "--font-pixel",
@@ -31,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${pixel.variable} antialiased overflow-hidden`}
+        className={`${inter.variable} ${pixel.variable} antialiased max-w-[1440px] mx-auto`}
       >
         {children}
       </body>

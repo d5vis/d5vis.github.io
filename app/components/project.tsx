@@ -53,7 +53,7 @@ const Project: React.FC<ProjectProps> = ({
               />
             </svg>
           </div>
-          <div className="text-xs text-center pt-2 z-20 md:text-sm">
+          <div className="text-xs text-center pt-2 z-20 md:text-sm transition-all">
             {description}
           </div>
         </div>

@@ -17,7 +17,7 @@ export default function Home() {
             <a
               href="https://buymeacoffee.com/d5vis"
               target="_blank"
-              className="hover:underline"
+              className="hover:underline focus:underline"
             >
               buy me a coffee
             </a>

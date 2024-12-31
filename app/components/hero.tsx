@@ -8,20 +8,23 @@ const Hero = () => {
           <b>davis banks</b>
         </h1>
         <div className="flex flex-col text-end sm:flex-row gap-2 sm:gap-4">
-          <Link href="#work" className="text-xl hover:underline">
+          <Link
+            href="#work"
+            className="text-xl hover:underline focus:underline"
+          >
             <b>work</b>
           </Link>
           <Link
             href="https://github.com/d5vis"
             target="_blank"
-            className="text-xl hover:underline"
+            className="text-xl hover:underline focus:underline"
           >
             <b>github</b>
           </Link>
           <Link
             href="https://linkedin.com/in/d5vis"
             target="_blank"
-            className="text-xl hover:underline"
+            className="text-xl hover:underline focus:underline"
           >
             <b>linkedin</b>
           </Link>

@@ -16,7 +16,19 @@ const pixel = localFont({
 
 export const metadata: Metadata = {
   title: "davis banks",
-  description: "davis banks' portfolio",
+  description: "engineer & creative",
+  openGraph: {
+    type: "website",
+    url: "https://davisjbanks.com",
+    siteName: "davis banks",
+    title: "davis banks",
+    description: "engineer & creative",
+    images: [
+      {
+        url: "/images/d5vis.jpg",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

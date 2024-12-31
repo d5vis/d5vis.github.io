@@ -1,6 +1,6 @@
 import Hero from "@/app/components/hero";
 import Projects from "@/app/components/projects";
-import Game from "@/app/components/game";
+// import Game from "@/app/components/game";
 
 export default function Home() {
   return (

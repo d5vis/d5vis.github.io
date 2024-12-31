@@ -57,7 +57,7 @@ const Project: React.FC<ProjectProps> = ({
             {description}
           </div>
         </div>
-        <div className="absolute inset-0 bg-gradient-to-br from-davblue to-white opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity z-10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-davblue to-gray-100 opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity z-10" />
       </div>
     </Link>
   );

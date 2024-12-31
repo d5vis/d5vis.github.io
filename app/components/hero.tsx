@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="relative h-[75vh] flex flex-col justify-between bg-gray-300 bg-hero bg-cover bg-center rounded-b-[48px] shadow-md">
+    <div className="relative h-[75vh] flex flex-col justify-between bg-davblue bg-hero bg-cover bg-center rounded-b-[48px] shadow-md">
       <nav className="relative z-10 flex w-full px-8 py-4 justify-between text-white">
         <h1 className="text-xl">
           <b>davis banks</b>

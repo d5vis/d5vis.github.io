@@ -19,7 +19,7 @@ const Project: React.FC<ProjectProps> = ({ title, link, image, logo }) => {
           height={720}
           className="rounded-2xl shadow-lg bg-gray-300 z-20 object-cover group-hover:rotate-[1deg] transition-all"
         />
-        <div className="flex flex-row items-center justify-center bg-white py-1 px-4 gap-2 rounded-3xl shadow-md z-20">
+        <div className="flex flex-row items-center justify-center bg-white py-1 px-4 gap-2 rounded-3xl shadow-md z-20 transition-all">
           <Image
             src={logo}
             alt={title}
@@ -36,7 +36,7 @@ const Project: React.FC<ProjectProps> = ({ title, link, image, logo }) => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="size-6 hidden group-hover:block"
+            className="size-6 hidden group-hover:block transition-all"
           >
             <path
               strokeLinecap="round"

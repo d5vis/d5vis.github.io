@@ -17,6 +17,7 @@ const pixel = localFont({
 export const metadata: Metadata = {
   title: "davis banks",
   description: "engineer & creative",
+  metadataBase: new URL("https://davisjbanks.com"),
   openGraph: {
     type: "website",
     url: "https://davisjbanks.com",

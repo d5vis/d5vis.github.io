@@ -1,6 +1,5 @@
 import Hero from "@/app/components/hero";
 import Projects from "@/app/components/projects";
-// import Game from "@/app/components/game";
 
 export default function Home() {
   return (
@@ -8,7 +7,6 @@ export default function Home() {
       <main className="flex-col items-center justify-center">
         <Hero />
         <Projects />
-        {/* <Game /> */}
       </main>
       <footer className="p-4 flex items-center justify-center text-gray-500 text-sm">
         <p>

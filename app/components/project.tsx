@@ -18,7 +18,7 @@ const Project: React.FC<ProjectProps> = ({
 }) => {
   return (
     <Link href={link} target="_blank">
-      <div className="relative group flex flex-col items-center justify-center w-full h-full bg-gray-100 text-gray-600 p-6 lg:p-16 gap-8 rounded-3xl hover:scale-[101%] hover:shadow-lg transition-all">
+      <div className="relative group flex flex-col items-center justify-center w-full h-full bg-gray-100 text-gray-600 p-6 lg:p-16 gap-8 rounded-3xl hover:scale-[101%] hover:shadow-sm transition-all">
         <Image
           src={image}
           alt={title}

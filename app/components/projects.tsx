@@ -4,7 +4,7 @@ const Projects = () => {
   return (
     <div
       id="work"
-      className="grid grid-cols[1fr] sm:grid-cols-[1fr_1fr] w-full p-6 gap-6"
+      className="grid grid-cols[1fr] sm:grid-cols-[1fr_1fr] w-full p-6 gap-6 motion-translate-y-in-[5%] motion-opacity-in motion-blur-in motion-delay-[1s]"
     >
       <div className="flex flex-col w-full h-full gap-4">
         <Project

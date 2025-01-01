@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className="relative h-[75vh] flex flex-col justify-between bg-davblue bg-hero bg-cover bg-center rounded-b-[48px] shadow-md">
       <nav className="relative z-10 flex w-full px-8 py-4 justify-between text-white">
-        <h1 className="text-xl">
+        <h1 className="text-xl motion-preset-typewriter-[11] motion-loop-[0.5] motion-duration-[4s] motion-delay-100 h-7">
           <b>davis banks</b>
         </h1>
         <div className="flex flex-col text-end sm:flex-row gap-2 sm:gap-4">
@@ -44,7 +44,7 @@ const Hero = () => {
         </div>
       </nav>
       <div className="flex flex-col items-center justify-center text-white p-8 gap-2 md:flex-row md:gap-8">
-        <div className="flex gap-1">
+        <div className="flex gap-1 motion-blur-in motion-duration-[1s]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -64,10 +64,9 @@ const Hero = () => {
               d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
             />
           </svg>
-
           <b>los angeles, california</b>
         </div>
-        <div className="flex gap-1">
+        <div className="flex gap-1 motion-blur-in motion-duration-[1s] motion-delay-[0.3s]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -84,7 +83,7 @@ const Hero = () => {
           </svg>
           <b>loyola marymount university</b>
         </div>
-        <div className="flex gap-1">
+        <div className="flex gap-1 motion-blur-in motion-duration-[1s] motion-delay-[0.6s]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

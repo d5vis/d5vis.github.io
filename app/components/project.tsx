@@ -53,11 +53,11 @@ const Project: React.FC<ProjectProps> = ({
               />
             </svg>
           </div>
-          <div className="text-xs text-center pt-2 z-20 md:text-sm transition-all">
+          <div className="text-xs text-center pt-2 z-20 md:text-sm group-hover:text-white transition-all">
             {description}
           </div>
         </div>
-        <div className="absolute inset-0 bg-gradient-to-br from-davblue to-gray-100 opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity z-10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-davblue via-blue-400 to-pink-300 opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity z-10" />
       </div>
     </Link>
   );

@@ -13,7 +13,7 @@ export default function Home() {
       <footer className="p-4 flex items-center justify-center text-gray-500 text-sm">
         <p>
           <b>
-            made with &lt;3 by @d5vis //{" "}
+            made with &lt;3 by <span className="text-davblue">@d5vis</span> //{" "}
             <a
               href="https://buymeacoffee.com/d5vis"
               target="_blank"

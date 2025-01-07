@@ -18,7 +18,7 @@ const Project: React.FC<ProjectProps> = ({
 }) => {
   return (
     <Link href={link} target="_blank">
-      <div className="relative group flex flex-col items-center justify-center w-full h-full bg-gray-100 text-gray-600 p-6 lg:p-16 gap-8 rounded-3xl hover:scale-[101%] hover:shadow-sm transition-all">
+      <div className="intersect-once motion-duration-1500 intersect:motion-translate-y-in-[20%] intersect:motion-blur-in relative group flex flex-col items-center justify-center w-full h-full bg-gray-100 text-gray-600 p-6 lg:p-16 gap-8 rounded-3xl hover:scale-[101%] hover:shadow-sm transition-all">
         <Image
           src={image}
           alt={title}
@@ -35,7 +35,7 @@ const Project: React.FC<ProjectProps> = ({
               height={24}
               className="p-[1px]"
             />
-            <h2 className="text-xs text-center font">
+            <h2 className="text-xs text-center">
               <b>{title}</b>
             </h2>
             <svg
@@ -44,7 +44,7 @@ const Project: React.FC<ProjectProps> = ({
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="size-6 hidden group-hover:block transition-all"
+              className="w-0 opacity-0 group-hover:motion-preset-rebound-right motion-duration-[0.4s] group-hover:w-6 group-hover:opacity-100 transition-all"
             >
               <path
                 strokeLinecap="round"
@@ -53,11 +53,11 @@ const Project: React.FC<ProjectProps> = ({
               />
             </svg>
           </div>
-          <div className="text-xs text-center pt-2 z-20 md:text-sm group-hover:text-white transition-all">
+          <div className="text-xs text-center pt-2 z-20 md:text-sm group-hover:text-white group-hover:text transition-all">
             {description}
           </div>
         </div>
-        <div className="absolute inset-0 bg-gradient-to-br from-davblue via-blue-400 to-pink-300 opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity z-10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-davblue via-blue-400 to-pink-300 opacity-0 group-hover:opacity-70 rounded-3xl transition-opacity z-10" />
       </div>
     </Link>
   );

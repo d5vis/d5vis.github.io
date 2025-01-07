@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import ObserverProvider from "./util/ObserverProvider";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -43,7 +44,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${pixel.variable} antialiased max-w-[1440px] mx-auto`}
       >
-        {children}
+        <ObserverProvider>{children}</ObserverProvider>
       </body>
       <GoogleAnalytics gaId="G-9HHQ2T247M" />
     </html>

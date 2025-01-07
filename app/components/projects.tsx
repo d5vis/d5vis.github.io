@@ -22,6 +22,13 @@ const Projects = () => {
           logo="/images/android.png"
         />
         <Project
+          title="NSBE at LMU"
+          description="Co-President, National Society of Black Engineers at Loyola Marymount University"
+          link="https://nsbelmu.org/"
+          image="/images/nsbe.png"
+          logo="/images/lmu.png"
+        />
+        <Project
           title="LMUCS TA Site"
           description="Computer Science TA Schedule & Resources"
           link="https://ta.lmucs.org"

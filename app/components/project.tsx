@@ -44,7 +44,7 @@ const Project: React.FC<ProjectProps> = ({
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-0 opacity-0 group-hover:motion-preset-rebound-right motion-duration-[0.4s] group-hover:w-6 group-hover:opacity-100 transition-all"
+              className="w-0 group-hover:motion-preset-rebound-right motion-duration-[0.4s] group-hover:w-6 transition-all"
             >
               <path
                 strokeLinecap="round"

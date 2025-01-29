@@ -28,6 +28,8 @@ const Projects = () => {
           image="/images/nsbe.png"
           logo="/images/lmu.png"
         />
+      </div>
+      <div className="flex flex-col w-full h-full gap-4">
         <Project
           title="LMUCS TA Site"
           description="Computer Science TA Schedule & Resources"
@@ -35,8 +37,6 @@ const Projects = () => {
           image="/images/talmucs.png"
           logo="/images/lmu.png"
         />
-      </div>
-      <div className="flex flex-col w-full h-full gap-4">
         <Project
           title="Who's on Duty?"
           description="RA Duty Schedule for LMU Student Housing"

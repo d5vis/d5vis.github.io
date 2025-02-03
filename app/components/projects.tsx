@@ -1,3 +1,4 @@
+import Playlist from "./playlist";
 import Project from "./project";
 
 const Projects = () => {
@@ -28,6 +29,13 @@ const Projects = () => {
           image="/images/nsbe.png"
           logo="/images/lmu.png"
         />
+        <Project
+          title="Causal Discovery"
+          description="Research on Causal Inference & Understanding Behavior"
+          link="https://drive.google.com/file/d/1wZTY-9hhW0jScWyRyxMbc1HGq27RsKdH/view?usp=sharing"
+          image="/images/causal.png"
+          logo="/images/lmu.png"
+        />
       </div>
       <div className="flex flex-col w-full h-full gap-4">
         <Project
@@ -44,13 +52,7 @@ const Projects = () => {
           image="/images/whosonduty.png"
           logo="/images/lmu.png"
         />
-        <Project
-          title="Causal Discovery"
-          description="Research on Causal Inference & Understanding Behavior"
-          link="https://drive.google.com/file/d/1wZTY-9hhW0jScWyRyxMbc1HGq27RsKdH/view?usp=sharing"
-          image="/images/causal.png"
-          logo="/images/lmu.png"
-        />
+        <Playlist />
       </div>
     </div>
   );

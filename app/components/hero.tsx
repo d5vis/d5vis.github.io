@@ -3,6 +3,7 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <div className="relative h-[75vh] flex flex-col justify-between bg-davblue bg-hero bg-cover bg-center rounded-b-[48px] shadow-md">
+      <div className="absolute inset-0 z-20 crt opacity-60 rounded-b-[48px] pointer-events-none" />
       <nav className="relative z-10 flex w-full px-8 py-4 justify-between text-white">
         <h1 className="text-xl motion-preset-typewriter-[11] motion-loop-[0.5] motion-duration-[4s] motion-delay-100 h-7">
           <b>davis banks</b>

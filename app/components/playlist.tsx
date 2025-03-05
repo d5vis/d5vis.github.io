@@ -11,21 +11,12 @@ const Playlist: React.FC<PlaylistProps> = ({ link, title, description }) => {
   return (
     <Link href={link} target="_blank" className="h-full">
       <div className="intersect-once motion-duration-1500 intersect:motion-translate-y-in-[20%] intersect:motion-blur-in relative group flex flex-col items-center justify-center w-full h-full bg-gray-100 text-gray-600 p-6 gap-8 rounded-3xl hover:scale-[101%] hover:shadow-sm transition-all">
-        {/* <iframe
-        className="z-20 rounded-xl bg-gray-300 min-h-[400px]"
-        src="https://open.spotify.com/embed/playlist/58bwbCuxsfTTbfI9gd6kK0?utm_source=generator"
-        width="100%"
-        height="100%"
-        allowFullScreen={false}
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"
-      ></iframe> */}
         <Image
           src="/images/cd.png"
           alt="cd"
           width={400}
           height={400}
-          className="animate-spin group-hover:animation-running animation-paused group-hover:drop-shadow-[0_15px_15px_rgba(0,0,0,0.5)] p-4 z-20 object-cover transition-all"
+          className="animate-spin group-hover:animation-running animation-paused group-hover:drop-shadow-[0_15px_15px_rgba(0,0,0,0.5)] p-4 z-20 rounded-full object-cover transition-all"
         />
         <div className="flex flex-col items-center justify-center gap-4">
           <div className="flex flex-row items-center justify-center bg-white py-1 px-4 gap-2 rounded-3xl shadow-md z-20 transition-all">

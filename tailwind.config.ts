@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import type { PluginAPI } from "tailwindcss/types/config";
 
 const config: Config = {
   content: [
@@ -21,11 +22,35 @@ const config: Config = {
       fontFamily: {
         pixel: "var(--font-pixel)",
       },
+      keyframes: {
+        spin: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+      },
       animation: {
         fadeIn: "fadeIn 1s ease-in-out",
+        spin: "spin 5s linear infinite",
+      },
+      animationPlayState: {
+        paused: "paused",
+        running: "running",
       },
     },
   },
-  plugins: [require("tailwindcss-motion"), require("tailwindcss-intersect")],
+  plugins: [
+    require("tailwindcss-motion"),
+    require("tailwindcss-intersect"),
+    function ({ addUtilities }: PluginAPI) {
+      addUtilities({
+        ".animation-paused": {
+          "animation-play-state": "paused",
+        },
+        ".animation-running": {
+          "animation-play-state": "running",
+        },
+      });
+    },
+  ],
 };
 export default config;

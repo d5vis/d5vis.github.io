@@ -17,7 +17,7 @@ const Project: React.FC<ProjectProps> = ({
   logo,
 }) => {
   return (
-    <Link href={link} target="_blank">
+    <Link href={link} target="_blank" className="h-full">
       <div className="intersect-once motion-duration-1500 intersect:motion-translate-y-in-[20%] intersect:motion-blur-in relative group flex flex-col items-center justify-center w-full h-full bg-gray-100 text-gray-600 p-6 lg:p-16 gap-8 rounded-3xl hover:scale-[101%] hover:shadow-sm transition-all">
         <Image
           src={image}

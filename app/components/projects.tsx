@@ -59,7 +59,11 @@ const Projects = () => {
           image="/images/whosonduty.png"
           logo="/images/lmu.png"
         /> */}
-        <Playlist />
+        <Playlist
+          link="https://open.spotify.com/playlist/58bwbCuxsfTTbfI9gd6kK0?si=a16a2f812c1549f2"
+          title="2025"
+          description="My 2025 Spotify Playlist"
+        />
       </div>
     </div>
   );

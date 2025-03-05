@@ -41,16 +41,7 @@ const config: Config = {
   plugins: [
     require("tailwindcss-motion"),
     require("tailwindcss-intersect"),
-    function ({ addUtilities }: PluginAPI) {
-      addUtilities({
-        ".animation-paused": {
-          "animation-play-state": "paused",
-        },
-        ".animation-running": {
-          "animation-play-state": "running",
-        },
-      });
-    },
+    require("./plugins/animationPlayStatePlugin"),
   ],
 };
 export default config;

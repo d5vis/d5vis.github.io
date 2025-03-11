@@ -19,10 +19,11 @@ const MapTooltip: React.FC<MapTooltipProps> = ({
     <div className="relative group w-full flex items-center gap-1">
       {icon}
       <b>{title}</b>
-      <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 group-hover:motion-blur-in absolute bottom-full left-1/2 transform -translate-x-1/2 p-4 mb-2 bg-gray-200 text-white text-sm rounded-2xl shadow-md pointer-events-none">
+      <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 group-hover:motion-blur-in absolute bottom-full left-1/2 transform -translate-x-1/2 p-4 mb-2 bg-gray-200 text-white text-sm rounded-2xl shadow-md">
+        <div className="absolute bottom-[-8px] left-0 w-full h-[8px]" />
         <iframe
           tabIndex={-1}
-          className="motion-blur-in motion-delay-300 w-[300px] h-[200px] bg-gray-100 rounded-xl aria-hidden"
+          className="motion-blur-in motion-delay-300 w-[300px] h-[200px] bg-gray-100 rounded-xl"
           height="600"
           src={`https://maps.google.com/maps?width=100%25&height=600&hl=en&q=${locationSearchQuery}&t=&z=${zoom}&ie=UTF8&iwloc=B&output=embed`}
         ></iframe>

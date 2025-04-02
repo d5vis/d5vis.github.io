@@ -39,7 +39,7 @@ const Projects = () => {
       </div>
       <div className="flex flex-col w-full h-full gap-4">
         <Project
-          title="Counterfactual Methods & Buyer Retention"
+          title="Counterfactuals & Buyer Retention"
           description="Machine Learning Research Engineer (Spring 2025)"
           link="https://ebay.com"
           image="/images/ebay.png"

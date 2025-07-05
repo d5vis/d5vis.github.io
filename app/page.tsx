@@ -13,7 +13,7 @@ export default function Home() {
           <b>
             made with &lt;3 by <span className="text-davblue">@d5vis</span> /{" "}
             <a
-              href="https://paypal.me/d5vis"
+              href="https://ko-fi.com/d5vis"
               target="_blank"
               className="hover:underline focus:underline"
             >
